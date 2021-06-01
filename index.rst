@@ -45,18 +45,21 @@ What is JupyterHub?
 
 
 
-What is JupyterHub not?
-~~~~~~~~~~~~~~~~~~~~~~~
-- User accounts
-- Data storage
-- Compute power
-- Programming language
+JupyterHub is not:
+
+- User accounts (depends on configuration)
+- Data storage (depends on environment it starts)
+- Compute power (depends on environment it starts)
+- Programming language (see `Jupyter kernels <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`__)
 
 
 
 Aalto integration
 ~~~~~~~~~~~~~~~~~
-- users: Aalto accounts (same as Aalto shell servers)
+
+jupyter.cs connects to Aalto services:
+
+- Users: Aalto accounts (same as Aalto shell servers)
 - Data storage: Network drive
 
   - Also mounted on shell servers
@@ -65,11 +68,14 @@ Aalto integration
 - Compute: CS kubernetes cluster
 - Programming language: conda environments in Docker images
 
+**jupyter.cs is not dedicated for courses and nothing else.  This is
+the advantage *and* disadvantage.**
+
 
 
 What is nbgrader?
 ~~~~~~~~~~~~~~~~~
-System for
+"notebook grader" is a system for
 
 - Creating assignments in notebooks
 - (Distributing them to students and getting them back)
@@ -79,6 +85,8 @@ System for
 
   - More like a bunch of scripts for managing the **standard format**
     notebook files.
+
+It is **not** a fancy tool, and the simplicity is the value.
 
 
 Nbgrader demo
@@ -94,8 +102,9 @@ Nbgrader demo
 * Getting grades out
 
 
-How can it be used in your teaching?
-------------------------------------
+
+How can jupyter.cs be used in your teaching?
+--------------------------------------------
 
 There are three different levels:
 
@@ -106,19 +115,31 @@ There are three different levels:
 
 Computing environment only
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Students are given jupyter.cs as an option to do their work/projects,
+but it's not the only option.
+
 Solves problems:
 
 * Difficult to install software, you need a way that works for everyone
-* People need a Linux environment for scripting
+* People need a Linux environment
 * You have big data, don't want everyone to have to make a copy
+
+
 
 nbgrader for file distribution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You use nbgrader to release assignments (but can release them other
+ways, too), students do their work and submit assignments however they
+normally would.
 
 Solves problems:
 
 * Computing environment from above
 * Easily distributes files in a way they can be directly run
+
+
 
 nbgrader + autograding
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -155,7 +176,8 @@ Encourage the department to support it
   teachers enough
 * Minimum: a summer worker to deal with some of the more annoying but
   easy-to-fix UI issues
-* Ideal: go a bit deeper, fix more nbgrader issues.
+* GPUs: big question mark, not cost-effective to deploy.
+
 
 
 Other options
