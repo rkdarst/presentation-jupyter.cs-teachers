@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = '{{Presentation Name}}'
-copyright = '2021, {{Author Name}}'
-author = '{{Author Name}}'
+project = 'jupyter.cs for teachers'
+copyright = 'CC-BY 2021, Richard Darst'
+author = 'Richard Darst'
 
 
 # -- General configuration ---------------------------------------------------
