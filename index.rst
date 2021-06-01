@@ -209,6 +209,11 @@ Are these things valuable to you?
 If these are not valuable, there is little need for jupyter.cs.
 
 
+(advertisement: Do your students like basic non-scientific computing
+skills?  The Science-IT project https://handsonscicomp.readthedcos.io/
+is an online course which may be useful!)
+
+
 
 ..
   .. toctree::
